@@ -1,5 +1,5 @@
 # Data Scientist
-<img src="email.png" width="200">
+<img src="email.png" width="180">
 
 [Resume (PDF)](Ray_Wang_2024.pdf)
 
@@ -32,6 +32,8 @@
 ### [Exploration of Seasonal Trading](https://github.com/raywang202/technical-trading)
 
 An exploration of seasonality in stock price movements, using Jupyter Notebooks. I look at seasonal price movements in the S&P 500 and individual stocks, and consider how trading strategies built around this seasonality would perform in an out-of-sample backtest in 2022 and 2023. I then overlay a random forest model on top of this "first stage" model, to identify the subset of strong performing stocks among those proposed by the seasonal strategy, rather than trading all of the stocks proposed. I also highlight the importance of "purging" the data such that the training and testing data do not overlap in time. The random forest seasonal strategy outperforms both the simple seasonal strategy as well as the S&P 500 in the 2022 and 2023 backtests. And while there are a large proportion of "missed" trading opportunities due to the random forest generating a large number of false negatives (low recall), this is compensated by the higher precision in identifying strong performers, such that the random forest strategy comes out on top, especially if one considers trade frictions.
+
+![Random Forest](rf_returns_2023.png)
 
 
 ## Education
