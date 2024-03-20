@@ -1,4 +1,4 @@
-# Ray Wang
+# Data Scientist
 <img src="email.png" width="200">
 
 [Resume (PDF)](Ray_Wang_2024.pdf)
