@@ -35,6 +35,9 @@ An exploration of seasonality in stock price movements, using Jupyter Notebooks.
 
 ![Random Forest](rf_returns_2023.png)
 
+### [Dissertation Code](https://github.com/raywang202/dissertation)
+
+Code used to implement my dissertation, [The Impact of Grades on College Major Choice, Dropout, and Labor Outcomes](https://cdr.lib.unc.edu/concern/dissertations/5m60qz54r?locale=en). At the core of my model is solving via backwards induction a dynamic programming model of student behaviors throughout college and into the workforce (using the framework of Keane and Wolpin 1997). This involves maximizing a simulated likelihood over a set of dozens of parameters, which requires calculating utilities over a large state space: solving this problem would have been infeasible without both the use Python's Numba package as well as the University's computing cluster.
 
 ## Education
 ### PhD in Economics
