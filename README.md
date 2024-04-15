@@ -1,4 +1,4 @@
-# Data Scientist
+# Economist/Data Scientist
 <img src="email.png" width="180">
 
 [Resume (PDF)](Ray_Wang_2024.pdf)
