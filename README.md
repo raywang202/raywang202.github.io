@@ -4,15 +4,15 @@
 [Resume (PDF)](Ray_Wang_2024.pdf)
 
 ### Technical Skills
-- **R**: ggplot, data.table, Shiny
-- **Python**: matplotlib, pandas, scipy, scikit-learn
+- **R**: ggplot, data.table
+- **Python**: pandas, scipy, scikit-learn
 - Dynamic discrete choice models, structural demand estimation, causal inference
 - Machine learning (random forest), regression (linear, logistic), exploratory data analysis
 
 ## Projects
 ### [Exploration of Seasonal Trading](https://github.com/raywang202/technical-trading)
 
-I explore seasonality in stock price movements, and use these trends plus a random forest classifier to generate a trading strategy, using Jupyter Notebooks. I look at seasonal price movements in the S&P 500 and individual stocks, and consider how trading strategies built around this seasonality would perform in an out-of-sample backtest in 2022 and 2023. I then overlay a random forest model on top of this "first stage" model, to identify a subset of strong performing stocks among those proposed by the seasonal strategy. I also highlight the importance of "purging" the data such that the training and testing data do not overlap in time. The random forest seasonal strategy outperforms both the simple seasonal strategy as well as the S&P 500 in the 2022 and 2023 backtests. And while there are a large proportion of "missed" trading opportunities due to the random forest generating a large number of false negatives (low recall), this is compensated by the higher precision in identifying strong performers, such that the random forest strategy comes out on top, especially if one considers trade frictions.
+I explore seasonality in stock price movements, and use these trends plus a random forest classifier to generate a trading strategy, using Jupyter Notebooks. I look at price movements in the S&P 500 and individual stocks, and consider how trading strategies built around seasonality would perform in an out-of-sample backtest in 2022 and 2023. I then overlay a random forest model on top of this "first stage" model, to identify a subset of strong performing stocks among those proposed by the seasonal strategy. I also highlight the importance of "purging" the data such that the training and testing data do not overlap in time. The random forest seasonal strategy outperforms both the simple seasonal strategy as well as the S&P 500 in the 2022 and 2023 backtests. And while there are a large proportion of "missed" trading opportunities due to the random forest generating a large number of false negatives (low recall), this is compensated by the higher precision in identifying strong performers, such that the random forest strategy comes out on top, especially if one considers trade frictions.
 
 ![Random Forest](rf_returns_2023.png)
 
@@ -25,8 +25,9 @@ Code used to implement my dissertation, [The Impact of Grades on College Major C
 **_Research Scientist / Economist_ | Nov 2023 - Present**  
 **_Research Analyst / Economist_ | Jun 2020 - Oct 2022**
 - Modeled sailor re-enlistment decisions using 7 million+ panel observations, via conditional choice probability (CCP) estimation in R
-- Simulated policy impacts, visualized results, and presented recommendations to military leadership, directly affecting implementation of Navy's Detailing Marketplace Assignment Policy (DMAP) Phase I
+- Simulated policy impacts, visualized results, and presented recommendations to military leadership, directly affecting implementation of Navy's Detailing Marketplace Assignment Policy (DMAP)
 - Within one year, learned legacy codebase and improved model fit, led project that extended Navy-specific codebase to work with Marine Corps data, and on-boarded and mentored incoming staff
+- Developed metric to predict military recruiting in different geographic regions, using LASSO methods
 
 **_CNA Field Representative to Carrier Strike Group (CSG) 12_ | Oct 2022 – Nov 2023**
 - Directly supported Commander, CSG-12 with analysis on operational topics including electronic warfare tactics and optimizing flight operations for first-in-class aircraft carrier. Embarked on board _USS Gerald R. Ford_ for Oct - Nov 2022 and May - Nov 2023 deployments
@@ -34,7 +35,7 @@ Code used to implement my dissertation, [The Impact of Grades on College Major C
 
 ### DC Energy | Vienna, VA
 **_Analyst_ | Sep 2012 - Oct 2013**
-- Analyzed electricity and steel/iron ore markets using R, leading to profitable trades with ~20% return on capital over 6 months
+- Analyzed electricity and steel/iron ore markets using R and SQL, proposed trades with 20% returns over 6 mos.
 - Developed dashboards with PHP and R Shiny to visualize prices in support of daily trading
 
 ## Education
