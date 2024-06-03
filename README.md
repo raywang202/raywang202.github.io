@@ -4,15 +4,16 @@
 [Resume (PDF)](Ray_Wang_2024.pdf)
 
 ### Technical Skills
-- **R**: ggplot, data.table
-- **Python**: pandas, scipy, scikit-learn
+- **R**: ggplot, data.table, Shiny
+- **Python**: pandas, scipy, scikit-learn, numba, conda
 - Dynamic discrete choice models, structural demand estimation, causal inference
-- Machine learning (random forest), regression (linear, logistic), exploratory data analysis
+- Machine learning (random forest), classification and regression models, exploratory data analysis, data visualization
+- Git, AWS, SQL
 
 ## Projects
 ### [Exploration of Seasonal Trading](https://github.com/raywang202/technical-trading)
 
-I explore seasonality in stock price movements, and use these trends plus a random forest classifier to generate a trading strategy, using Jupyter Notebooks. I look at price movements in the S&P 500 and individual stocks, and consider how trading strategies built around seasonality would perform in an out-of-sample backtest in 2022 and 2023. I then overlay a random forest model on top of this "first stage" model, to identify a subset of strong performing stocks among those proposed by the seasonal strategy. I also highlight the importance of "purging" the data such that the training and testing data do not overlap in time. The random forest seasonal strategy outperforms both the simple seasonal strategy as well as the S&P 500 in the 2022 and 2023 backtests. And while there are a large proportion of "missed" trading opportunities due to the random forest generating a large number of false negatives (low recall), this is compensated by the higher precision in identifying strong performers, such that the random forest strategy comes out on top, especially if one considers trade frictions.
+An analysis of seasonal trading strategies in the S&P 500, using Jupyter Notebooks. Using a dataset of 6 million+ daily close prices across the S&P 500, I applied a random forest classifier to identify a subset of very profitable trades among all seasonal price signals, trading off recall for improved precision. The random forest strategy resulted in simulated returns that outperformed both the S&P500 and a seasonal trading strategy in both 2022 and 2023
 
 ![Random Forest](rf_returns_2023.png)
 
@@ -24,25 +25,31 @@ Code used to implement my dissertation, [The Impact of Grades on College Major C
 ### Center for Naval Analyses (CNA) | Arlington, VA
 **_Research Scientist / Economist_ | Nov 2023 - Present**  
 **_Research Analyst / Economist_ | Jun 2020 - Oct 2022**
-- Modeled sailor re-enlistment decisions using 7 million+ panel observations, via conditional choice probability (CCP) estimation in R
-- Simulated policy impacts, visualized results, and presented recommendations to military leadership, directly affecting implementation of Navy's Detailing Marketplace Assignment Policy (DMAP)
-- Within one year, learned legacy codebase and improved model fit, led project that extended Navy-specific codebase to work with Marine Corps data, and on-boarded and mentored incoming staff
-- Developed metric to predict military recruiting in different geographic regions, using LASSO methods
+- Led technical effort to model and predict sailor re-enlistment decisions using 7 million+ panel observations, using conditional choice probability (CCP) estimation methods in R
+- Simulated counterfactual policy impacts across different subpopulations/Navy ratings, visualized results, and provided recommendations to military leadership, affecting the implementation of promotion/compensation policies in Navy’s Detailing Marketplace Assignment Policy (DMAP)
+- Within one year of on-boarding as junior researcher, assumed project leadership role. Learned legacy codebase, expanded model functionality to incorporate heterogeneous policy impacts across different subgroups, and documented model framework leading to successful hand-off of model after project completion
+- Led project that extended Navy-specific model and codebase to accommodate differently structured datasets and use-cases for the Marine Corps, on a compressed project timeline
+- Mentored junior team members in econometric methods and programming best practices
+- Developed metric to predict military recruiting yield across different geographic regions using LASSO methods. Presented results to non-technical audience of practitioners
+
 
 **_CNA Field Representative to Carrier Strike Group (CSG) 12_ | Oct 2022 – Nov 2023**
-- Directly supported Commander, CSG-12 with analysis on operational topics including electronic warfare tactics and optimizing flight operations for first-in-class aircraft carrier. Embarked on board _USS Gerald R. Ford_ for Oct - Nov 2022 and May - Nov 2023 deployments
-- Worked independently in a fast turnaround and technology-constrained environment. Conducted interviews with junior and senior sailors, collected and analyzed quantitative and qualitative data, and provided recommendations to leadership and action officers
+- Directly supported Commander, CSG-12 with analysis on operational capabilities of first-in-class aircraft carrier. Embarked on board USS Gerald R. Ford for Oct - Nov 2022 and May - Nov 2023 deployments
+- Worked independently in a fast turnaround and technology-constrained environment. Developed and planned analysis efforts to address Commander’s emerging priorities and timelines
+- Conducted discussions with junior and senior sailors, collected and analyzed quantitative and qualitative data, and provided tailored recommendations and presentations to both senior leadership and action officers
+- Efforts included modeling the impact of new military technology on Composite Training Unit Exercise certification metrics and developing new operational best practices, identifying focus areas for equipment upgrades to improve combat operational efficiency metrics, and assessing carrier strike group tactics in the presence of ship hardware interoperability concerns
 
 ### DC Energy | Vienna, VA
 **_Analyst_ | Sep 2012 - Oct 2013**
-- Analyzed electricity and steel/iron ore markets using R and SQL, proposed trades with 20% returns over 6 mos.
-- Developed dashboards with PHP and R Shiny to visualize prices in support of daily trading
+- Analyzed electricity and steel/iron ore markets using R and SQL. Proposed trading strategies that led to 20% returns over 6 months
+- Developed dashboards with PHP and R Shiny to visualize asset prices in support of daily trading
+
 
 ## Education
 ### PhD in Economics
 **_University of North Carolina at Chapel Hill | 2014 - 2020_**
 - Subfields: Applied microeconomics, labor economics
-- Dissertation involved data cleaning, dynamic programming, and program execution time optimization in Python; data visualization in R
+- Dissertation involved data cleaning, dynamic programming, and program execution time optimization in Python using numba; data visualization in R
   - Code snippets available [here](https://github.com/raywang202/dissertation)
   - Dissertation available at the [UNC Library](https://cdr.lib.unc.edu/concern/dissertations/5m60qz54r?locale=en)
 
@@ -52,5 +59,5 @@ Code used to implement my dissertation, [The Impact of Grades on College Major C
 ## Other
 - Top Secret security clearance (Nov 2022 – Present)
 - Secret security clearance (Jan 2021 – Nov 2022)
-- Fluent in English and Chinese
+- Fluent in English and Chinese, intermediate Spanish
 
